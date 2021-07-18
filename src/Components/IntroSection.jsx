@@ -10,15 +10,14 @@ const IntroSection = () => {
         <div className="intro_sd">
           <div className="intro_left">
             <h1>
-              beyond <br /> just <br /> software{" "}
+            more than <br /> just <br /> a developer{" "}
             </h1>
             <p>
-              From bold ideas to successful digital products via creating
-              future-ready apps, websites and digital solutions.
+            No project is too small or too big.  We don't just develop, we make sure our solutions add value to your business.
             </p>
             <div className="animate_btn_div">
               <a href="#contact">
-              <button className="cus_btn"  >let's talk business</button>
+              <button className="cus_btn"  >Get in touch</button>
               </a>
             </div>
           </div>

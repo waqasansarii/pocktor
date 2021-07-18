@@ -10,7 +10,7 @@ import SwiperCore, {
 // assets
 import fb from "../Assets/fb.png";
 import twtr from "../Assets/Twitter-1.png";
-import partner from "../Assets/partner.jpeg";
+import partner from "../Assets/Partners.jpg";
 // import "swiper/swiper.css";
 import "swiper/swiper.min.css";
 

@@ -8,7 +8,7 @@
 
 @media (prefers-reduced-motion: no-preference) {
   .anim_img {
-    animation: logos infinite 6.3s linear backwards;
+    animation: logos infinite 7.3s linear backwards;
     animation-delay: .3s;
   }
 }
@@ -295,6 +295,7 @@
   padding: 20px;
   background-color: rgb(253, 252, 252);
   text-align: center;
+  border-radius: 7px;
 }
 .card_body {
   margin-top: 15px;
@@ -306,6 +307,7 @@
   width: 90%;
   margin: 0px auto;
   text-align: center;
+  border-radius: 150px;
 }
 
 .bio {
