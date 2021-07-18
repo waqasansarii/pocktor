@@ -18,14 +18,14 @@ SwiperCore.use([Navigation, Pagination, Scrollbar, A11y, Autoplay]);
 
 const Partner = () => {
   return (
-    <div className="partner_container">
+    <div className="partner_container" id="partner">
       <div className="partner_md">
         <div className="partner_sd">
           <div className="p_head">
             <h1>Partners</h1>
             <p>
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-              Obcaecati voluptates facere ea natus ist
+              Our business model at Pocktor means we don’t have employees. This
+              means we can offer our customers the most competitive prices.
             </p>
           </div>
           <img className="p_main" src={partner} alt="..." />

@@ -3,7 +3,7 @@ import { serviceData } from "../Pages/data";
 
 const Services = () => {
   return (
-    <div className="sc_container">
+    <div className="sc_container" id='services'>
       <div className="sc_md">
         <div className="sc_sd">
           <div className="sc_sbtitle">Offered</div>

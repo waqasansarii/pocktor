@@ -18,7 +18,7 @@ const Navbar = () => {
     mobMenu = false;
   }
   return (
-    <div className="nav-container" id="header">
+    <div className="nav-container " id="header">
       <div className="container-xl">
         <div className="col-12 col-xl-12 offset-xl-0 col-lg-10 offset-lg-1">
           <nav>
@@ -54,28 +54,28 @@ const Navbar = () => {
                   </div>
                 </li>
                 <li>
-                  <a href="/projects" title="Projects">
+                  <a href="#projects" title="Projects">
                     Projects
                   </a>
                 </li>
                 <li>
-                  <a href="/services" title="Services">
+                  <a href="#services" title="Services">
                     Services
                   </a>
                 </li>
                 <li>
-                  <a href="/team" title="Team">
-                    Team
+                  <a href="#partner" title="Team">
+                    Partner
                   </a>
                 </li>
                 <li>
-                  <a href="/careers" title="Careers">
-                    Careers
+                  <a href="#about" title="Careers">
+                    About
                   </a>
                 </li>
                 <li>
-                  <a href="/blog" title="Blog">
-                    Blog
+                  <a href="#contact" title="Blog">
+                    Contact
                   </a>
                 </li>
                 {/* <li>
