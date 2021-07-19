@@ -52,7 +52,7 @@ const Navbar = () => {
                 <li className="non-hidden logo">
                   <div className="logo">
                     <a className="logo" href="/">
-                      <img src="/assets/icons/logo.svg" alt="logo" />
+                      <img src={logo} alt="logo" />
                     </a>
                   </div>
                 </li>
