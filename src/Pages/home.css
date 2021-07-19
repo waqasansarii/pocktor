@@ -8,18 +8,18 @@
 
 @media (prefers-reduced-motion: no-preference) {
   .anim_img {
-    animation: logos infinite 7.3s linear backwards;
+    animation: logos infinite 8s linear backwards;
     animation-delay: .3s;
   }
 }
 
 @keyframes logos {
   from {
-    transform: rotate(0deg) scale(.5);
+    transform: rotate(0deg) scale(.3);
     /* transform: scale(.5); */
   }
   to {
-    transform: rotate(360deg) scale(.8);
+    transform: rotate(360deg) scale(.6);
     /* transform: scale(1.2); */
   }
 }
@@ -143,12 +143,15 @@
   /* padding: 32px; */
   border-radius: 24px;
 }
+
 .projects-col:hover .box-item-image-block img {
-  transform: scale(1.1);
-  transition: ease 1s;
+  transform: scale(1.13);
+  transition: ease 1.5s;
+  border-radius: 200px;
 }
 .box-item-image-block {
   margin-top: 35px;
+  /* border: 2px solid red; */
 }
 .projects-col:nth-child(2n) {
   top: 8.5rem;
@@ -391,13 +394,13 @@
   background-image: url("../Assets/body.png");
   background-repeat: no-repeat;
   background-position: center;
-  background-size: 86% 650px;
+  background-size: 86% 670px;
   /* width: 80%; */
   /* text-align: center; */
 }
 .lt_bg > div {
   overflow-y: auto;
-  max-height: 650px;
+  max-height: 670px;
   width: 58%;
   margin: 0px auto;
 }
@@ -407,7 +410,10 @@
 .lt_bg p,.lt_bg li {
   font-weight: bold;
 }
-
+.centered{
+  text-align: center;
+  font-size: 1.5rem;
+}
 /* contact section  */
 
 .contact_sd {
@@ -503,7 +509,10 @@
     text-align: center;
   }
   .project_sd{
-    margin-top: 30px;
+    margin-top: 0px;
+  }
+  .intro_sd{
+    margin-bottom: 10px;
   }
   .project_dc_p{
     width: 100%;

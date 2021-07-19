@@ -69,6 +69,7 @@ const About = () => {
                   probably know that already. Thanks again for passing by
                   Pocktor.
                 </p>
+                <p className="centered">"John"</p>
               </div>
             </div>
             <div className="lt_down">

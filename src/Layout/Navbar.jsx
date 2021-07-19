@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "./style.css";
-import logo from '../Assets/new-project1.jpeg'
+import logo from '../Assets/final.png'
 const Navbar = () => {
   const [width, setWidth] = React.useState(window.innerWidth);
   const updateWidthAndHeight = () => {
@@ -23,7 +23,7 @@ const Navbar = () => {
       <div className="container-xl">
         <div className="col-12 col-xl-12 offset-xl-0 col-lg-10 offset-lg-1">
           <nav>
-            <a className="main_logo" href="/">
+            <a className="main_logo" href="#">
               <img src={logo} alt="logo" />
             </a>
             <div className="nav-navigation">

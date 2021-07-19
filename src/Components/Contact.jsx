@@ -26,8 +26,8 @@ const Contact = () => {
             </div>
             <div className="visit">
               <p className="grn_clr">Visit us</p>
-              <h2>Address:</h2>
-              <h6>Råsundavägen 160</h6>
+              {/* <h2>Address:</h2> */}
+              <h6>Råsundavägen 160 16938 Solna Stockholm</h6>
               <h6>F-skatt</h6>
             </div>
             <div className="follow">

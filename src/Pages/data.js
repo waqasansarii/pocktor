@@ -4,6 +4,9 @@ import uiux from "../Assets/uiux.svg";
 import pManage from "../Assets/manage.svg";
 import software from "../Assets/software.svg";
 import project1 from "../Assets/project1.jpeg";
+import project2 from '../Assets/project2.jpeg'
+import project3 from '../Assets/project3.jpeg'
+import project4 from '../Assets/project4.jpeg'
 import partner1 from "../Assets/partner2.jpg";
 
 export const projects = [
@@ -12,14 +15,15 @@ export const projects = [
     subTitle: "Time Managment and Scheduling  System",
     img: project1,
     bg: "linear-gradient(180deg, #FFCA28 0%, #121212 100%)",
-    color: "black",
+    color: "white",
     id: "01",
     link: "http://arkhivetest.azurewebsites.net/",
   },
   {
     title: "“Docterio",
     subTitle: "Find a doctor Near You and Book Online",
-    img: "https://uinno.io/assets/images/cards/blocks.png",
+    // img: "https://uinno.io/assets/images/cards/blocks.png",
+    img:project2,
     bg: "linear-gradient(180deg, #255fbc 0%, #121212 100%)",
     color: "white",
     id: "02",
@@ -28,7 +32,7 @@ export const projects = [
   {
     title: "Kitab",
     subTitle: "Landing Page which can be used as theme",
-    img: "https://uinno.io/assets/images/cards/blocks.png",
+    img: project3,
     bg: "linear-gradient(180deg, #7E478B 0%, #121212 100%)",
     color: "white",
     id: "03",
@@ -37,7 +41,7 @@ export const projects = [
   {
     title: "Ux Group",
     subTitle: "A Company Website",
-    img: "https://uinno.io/assets/images/cards/blocks.png",
+    img:project4,
     bg: "linear-gradient(180deg, #50B2BE 0%, #121212 100%)",
     color: "white",
     id: "04",
