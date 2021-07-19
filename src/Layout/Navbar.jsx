@@ -51,7 +51,7 @@ const Navbar = () => {
               >
                 <li className="non-hidden logo">
                   <div className="logo">
-                    <a className="logo" href="/">
+                    <a className="main_logo" href="/">
                       <img src={logo} alt="logo" />
                     </a>
                   </div>
