@@ -65,7 +65,7 @@ const Navbar = () => {
                 </li>
                 <li>
                   <a href="#partner" title="Team">
-                    Partner
+                    Partners
                   </a>
                 </li>
                 <li>

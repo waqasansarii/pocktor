@@ -46,6 +46,7 @@
   width: 80%;
   margin: 30px auto;
   max-width: 1300px;
+  align-items: center;
 }
 .intro_left {
   width: 500px;
@@ -104,6 +105,11 @@
 .project_sd > p,
 .project_sd > h1 {
   color: var(--grey);
+}
+.project_dc_p{
+  color: var(--darkgrey) !important;
+  width: 60%;
+  margin-top: 10px;
 }
 .project_sd > h1 {
   font-size: 4rem;
@@ -277,9 +283,21 @@
   font-size: 4rem;
   color: var(--grey);
 }
+.cus_hr{
+  background-color: white;
+  height: 20px;
+  width: 200px;
+  border:2px solid white;
+  margin: 0px;
+}
+.about_hr{
+  width: 160px;
+}
+
+
 .p_head > p {
   color: var(--darkgrey);
-  width: 80%;
+  width: 60%;
   font-size: 1.1rem;
   margin-top: 10px;
 }
@@ -296,18 +314,21 @@
   background-color: rgb(253, 252, 252);
   text-align: center;
   border-radius: 7px;
+  /* min-height: 600px; */
 }
+
 .card_body {
   margin-top: 15px;
 }
 .card_body > p {
   margin-bottom: 0px;
+  font-size: .9rem;
 }
 .partner_card > img {
-  width: 90%;
+  width: 80%;
   margin: 0px auto;
   text-align: center;
-  border-radius: 150px;
+  border-radius: 500px;
 }
 
 .bio {
@@ -394,6 +415,7 @@
 }
 .contact_info {
   display: flex;
+  justify-content: space-between;
 }
 .grn_clr {
   color: #46bdc4;
@@ -402,25 +424,26 @@
   display: flex;
   flex-direction: column;
 }
-.visit {
-  margin-left: 50px;
-}
+
 .visit h2 {
   color: var(--grey);
 }
 .visit h6 {
   color: var(--grey);
 }
-.c_num > a {
-  font-size: 2rem;
+.c_num>div>span{
+  /* width:550px ; */
+  font-size: 1.3rem;
+  color: var(--darkgrey);
+}
+.c_num >div> a {
+  font-size: 1.2rem;
   color: white;
   margin-bottom: 5px;
+  margin-left: 10px;
 }
 .c_num > a:hover {
   text-decoration: underline white;
-}
-.follow {
-  margin-left: 50px;
 }
 .follow > ul {
   display: flex;
@@ -452,8 +475,39 @@
   text-decoration: underline;
   border: 1px solid #0056b3;
 }
-
+@media screen and (max-width: 1140px) {
+  .intro_left h1{
+    font-size: 3.5rem;
+  }
+  .intro_right{
+    width: 350px;
+  }
+  .intro_right img{
+    width: 90%;
+  }
+}
 @media screen and (max-width: 830px) {
+  .intro_sd{
+    flex-wrap: wrap;
+  }
+  .intro_left{
+    width: 100%;
+  }
+  .intro_right{
+    width: 100%;
+    margin-top: 20px;
+    margin-left: 0px;
+    text-align: center;
+  }
+  .project_sd{
+    margin-top: 30px;
+  }
+  .project_dc_p{
+    width: 100%;
+  }
+  .intro_right img{
+    width: 90%;
+  }
   .contact_info {
     flex-wrap: wrap;
   }
@@ -501,6 +555,9 @@
     width: 80px;
     height: 80px;
   }
+  .visit{
+    margin-top: 20px;
+  }
   .partner_card {
     margin: 0px auto;
   }
@@ -514,10 +571,15 @@
     width: 100%;
   }
 }
+@media screen and (max-width: 430px) {
+  .c_num >div> a,.c_num>div>span{
+    font-size: .9rem;
+  }
+}
 @media screen and (max-width: 400px) {
   .intro_left h1,
   .project_sd > h1,
-  .p_head > h1 {
+  .p_head > h1 ,.sc_sd > h1{
     font-size: 2.5rem;
   }
   .service-col {
@@ -544,7 +606,7 @@
 @media screen and (max-width: 325px) {
   .visit {
     margin-left: 0px;
-    margin-top: 20px;
+    /* margin-top: 20px; */
   }
   .contact_info {
     justify-content: center;

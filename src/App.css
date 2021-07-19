@@ -3,7 +3,7 @@
   padding: 0px;
   box-sizing: border-box;
   scroll-behavior: smooth;
-  
+  font-family: 'Roboto', sans-serif;
 }
 :root{
   --grey:#E0E0E0;

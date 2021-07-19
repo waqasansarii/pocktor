@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import SwiperCore, {
   Navigation,
@@ -7,28 +7,43 @@ import SwiperCore, {
   A11y,
   Autoplay,
 } from "swiper";
+// data
+import { partner } from "../Pages/data";
 // assets
 import fb from "../Assets/fb.png";
 import twtr from "../Assets/Twitter-1.png";
-import partner from "../Assets/Partners.jpg";
+import web from "../Assets/web.png";
+import git from "../Assets/git.png";
+import partnerImg from "../Assets/Partners.jpg";
+import AOS from "aos";
+import "aos/dist/aos.css";
 // import "swiper/swiper.css";
 import "swiper/swiper.min.css";
 
 SwiperCore.use([Navigation, Pagination, Scrollbar, A11y, Autoplay]);
 
 const Partner = () => {
+  useEffect(() => {
+    AOS.init();
+  }, []);
   return (
     <div className="partner_container" id="partner">
       <div className="partner_md">
         <div className="partner_sd">
           <div className="p_head">
             <h1>Partners</h1>
+            <hr
+              data-aos="fade-right"
+              data-aos-duration="500"
+              data-aos-easing="ease-in-out"
+              className="cus_hr"
+            />
             <p>
               Our business model at Pocktor means we don’t have employees. This
               means we can offer our customers the most competitive prices.
             </p>
           </div>
-          <img className="p_main" src={partner} alt="..." />
+          <img className="p_main" src={partnerImg} alt="..." />
           <div className="partnr_cards">
             <Swiper
               slidesPerView={1}
@@ -54,142 +69,48 @@ const Partner = () => {
               }}
               className="mySwiper"
             >
-              <SwiperSlide className="">
-                <div className="partner_card">
-                  <img
-                    className="member_img"
-                    src="https://www.diethelmtravel.com/wp-content/uploads/2016/04/bill-gates-wealthiest-person.jpg"
-                    alt="..."
-                  />
-                  <div className="card_body">
-                    <p>CEO</p>
-                    <h5>Member One</h5>
-                    <p className="bio">
-                      Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                      Alias at placeat quasi necessitatibus provident
-                      consequatur, explicabo nisi tempore deserunt! Nisi itaque
-                      quaerat ducimus deserunt et quis reiciendis ipsam commodi
-                      laboriosam.
-                    </p>
-                    <ul className="icon_ul">
-                      <li>
-                        <img src={fb} alt="..." />
-                      </li>
-                      <li>
-                        <img className="logo_wt" src={twtr} alt="..." />
-                      </li>
-                      <li>
-                        <img className="logo_wt" src={twtr} alt="..." />
-                      </li>
-                      <li>
-                        <img src={fb} alt="..." />
-                      </li>
-                    </ul>
+              {partner.map((val, id) => (
+                <SwiperSlide className="" key={id}>
+                  <div className="partner_card">
+                    <img className="member_img" src={val.img} alt="..." />
+                    <div className="card_body">
+                      <p>{val.work}</p>
+                      <h5>{val.name}</h5>
+                      <p className="bio">{val.about}</p>
+                      <ul className="icon_ul">
+                        <li>
+                          <a
+                            href={val.fb}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                          >
+                            <img src={fb} alt="..." />
+                          </a>
+                        </li>
+                        <li>
+                          <a href={val.twiter} target="_blank">
+                            <img className="logo_wt" src={twtr} alt="..." />
+                          </a>
+                        </li>
+                        <li>
+                          <a href={val.git} target="_blank">
+                            <img className="logo_wt" src={git} alt="..." />
+                          </a>
+                        </li>
+                        <li>
+                          <a href={val.web} target="_blank">
+                            <img
+                              style={{ width: "40px", objectFit: "contain" }}
+                              src={web}
+                              alt="..."
+                            />
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
                   </div>
-                </div>
-              </SwiperSlide>
-              <SwiperSlide>
-                <div className="partner_card">
-                  <img
-                    className="member_img"
-                    src="https://www.diethelmtravel.com/wp-content/uploads/2016/04/bill-gates-wealthiest-person.jpg"
-                    alt="..."
-                  />
-                  <div className="card_body">
-                    <p>CEO</p>
-                    <h5>Member One</h5>
-                    <p className="bio">
-                      Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                      Alias at placeat quasi necessitatibus provident
-                      consequatur, explicabo nisi tempore deserunt! Nisi itaque
-                      quaerat ducimus deserunt et quis reiciendis ipsam commodi
-                      laboriosam.
-                    </p>
-                    <ul className="icon_ul">
-                      <li>
-                        <img src={fb} alt="..." />
-                      </li>
-                      <li>
-                        <img className="logo_wt" src={twtr} alt="..." />
-                      </li>
-                      <li>
-                        <img className="logo_wt" src={twtr} alt="..." />
-                      </li>
-                      <li>
-                        <img src={fb} alt="..." />
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </SwiperSlide>
-              <SwiperSlide>
-                <div className="partner_card">
-                  <img
-                    className="member_img"
-                    src="https://www.diethelmtravel.com/wp-content/uploads/2016/04/bill-gates-wealthiest-person.jpg"
-                    alt="..."
-                  />
-                  <div className="card_body">
-                    <p>CEO</p>
-                    <h5>Member One</h5>
-                    <p className="bio">
-                      Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                      Alias at placeat quasi necessitatibus provident
-                      consequatur, explicabo nisi tempore deserunt! Nisi itaque
-                      quaerat ducimus deserunt et quis reiciendis ipsam commodi
-                      laboriosam.
-                    </p>
-                    <ul className="icon_ul">
-                      <li>
-                        <img src={fb} alt="..." />
-                      </li>
-                      <li>
-                        <img className="logo_wt" src={twtr} alt="..." />
-                      </li>
-                      <li>
-                        <img className="logo_wt" src={twtr} alt="..." />
-                      </li>
-                      <li>
-                        <img src={fb} alt="..." />
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </SwiperSlide>
-              <SwiperSlide>
-                <div className="partner_card">
-                  <img
-                    className="member_img"
-                    src="https://www.diethelmtravel.com/wp-content/uploads/2016/04/bill-gates-wealthiest-person.jpg"
-                    alt="..."
-                  />
-                  <div className="card_body">
-                    <p>CEO</p>
-                    <h5>Member One</h5>
-                    <p className="bio">
-                      Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                      Alias at placeat quasi necessitatibus provident
-                      consequatur, explicabo nisi tempore deserunt! Nisi itaque
-                      quaerat ducimus deserunt et quis reiciendis ipsam commodi
-                      laboriosam.
-                    </p>
-                    <ul className="icon_ul">
-                      <li>
-                        <img src={fb} alt="..." />
-                      </li>
-                      <li>
-                        <img className="logo_wt" src={twtr} alt="..." />
-                      </li>
-                      <li>
-                        <img className="logo_wt" src={twtr} alt="..." />
-                      </li>
-                      <li>
-                        <img src={fb} alt="..." />
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </SwiperSlide>
+                </SwiperSlide>
+              ))}
             </Swiper>
           </div>
         </div>

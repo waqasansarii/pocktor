@@ -5,15 +5,24 @@ import insta from "../Assets/instagram.svg";
 
 const Contact = () => {
   return (
-    <div className="contact_container" id='contact' >
+    <div className="contact_container" id="contact">
       <div className="contact_md">
         <div className="contact_sd">
           <div className="contact_info">
             <div className="c_num">
               <p className="grn_clr">Contact us</p>
-              <a href="mailto:"> info@pocktor.se</a>
-              <a href="tel:+">0706622233</a>
-              <a href="tel:+"> 559237-4333</a>
+              <div>
+                <span>Email Address:</span>
+                <a href="mailto:"> info@pocktor.se</a>
+              </div>
+              <div>
+                <span>Telephone Number:</span>
+                <a href="tel:+">0706622233</a>
+              </div>
+              <div>
+                <span>Organizationn Number:</span>
+                <a href="tel:+"> 559237-4333</a>
+              </div>
             </div>
             <div className="visit">
               <p className="grn_clr">Visit us</p>

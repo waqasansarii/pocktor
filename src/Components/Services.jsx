@@ -1,13 +1,24 @@
-import React from "react";
+import React,{useEffect} from "react";
 import { serviceData } from "../Pages/data";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const Services = () => {
+  useEffect(() => {
+    AOS.init();
+  }, []);
   return (
     <div className="sc_container" id='services'>
       <div className="sc_md">
         <div className="sc_sd">
           <div className="sc_sbtitle">Offered</div>
           <h1>Services</h1>
+          <hr
+              data-aos="fade-right"
+              data-aos-duration="500"
+              data-aos-easing="ease-in-out"
+              className="cus_hr"
+            />
           <p>
             We are fully focused to solve your business challenges. No matter
             the technology or architecture, we will find the most optimal

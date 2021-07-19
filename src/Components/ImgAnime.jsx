@@ -7,10 +7,15 @@ import SwiperCore, {
   A11y,
   Autoplay,
 } from "swiper";
-import react from "../Assets/1.React.svg";
+// assets
+import dotnet from "../Assets/dotnet.png";
+import python from "../Assets/python.png";
+import rails from "../Assets/rails.png";
+import reactLogo from '../Assets/reactlogo.png'
+import node from '../Assets/node.png'
 import "swiper/swiper.min.css";
 
-SwiperCore.use([Navigation, Pagination, Scrollbar, A11y, Autoplay]);
+SwiperCore.use([Navigation, Pagination, Autoplay]);
 
 export default function ImgAnime() {
   return (
@@ -26,20 +31,37 @@ export default function ImgAnime() {
       >
         <SwiperSlide>
           <img
-          className='anim_img'
-            src="http://assets.stickpng.com/images/584830f5cef1014c0b5e4aa1.png"
+            className="anim_img"
+            src={reactLogo}
             alt="..."
           />
         </SwiperSlide>
         <SwiperSlide>
           <img
-          className='anim_img2'
-            src="https://www.pngkit.com/png/full/66-667065_js-club-new-balance-png-logo-node-js.png"
+            className="anim_img2"
+            src={node}
             alt="..."
           />
         </SwiperSlide>
+        <SwiperSlide>
+          <img
+            className="anim_img2"
+            src={rails}
+            alt="..."
+          />
+        </SwiperSlide>
+        <SwiperSlide>
+          <img
+            className="anim_img"
+            src={python}
+            alt="..."
+          />
+        </SwiperSlide>
+
+        <SwiperSlide>
+          <img className="anim_img2" src={dotnet} alt="..." />
+        </SwiperSlide>
       </Swiper>
-      {/* <img src={react} alt="" /> */}
     </div>
   );
 }
