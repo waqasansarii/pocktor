@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "./style.css";
-
+import logo from '../Assets/new-project1.jpeg'
 const Navbar = () => {
   const [width, setWidth] = React.useState(window.innerWidth);
   const updateWidthAndHeight = () => {
@@ -17,13 +17,14 @@ const Navbar = () => {
   if (width > 992) {
     mobMenu = false;
   }
+
   return (
     <div className="nav-container " id="header">
       <div className="container-xl">
         <div className="col-12 col-xl-12 offset-xl-0 col-lg-10 offset-lg-1">
           <nav>
-            <a className="logo" href="/">
-              <img src="/assets/icons/logo.svg" alt="logo" />
+            <a className="main_logo" href="/">
+              <img src={logo} alt="logo" />
             </a>
             <div className="nav-navigation">
               <ul className="menu-toggle">
