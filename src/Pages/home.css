@@ -404,6 +404,9 @@
 .lt_bg > div::-webkit-scrollbar {
   width: 5px;
 }
+.lt_bg p,.lt_bg li {
+  font-weight: bold;
+}
 
 /* contact section  */
 
