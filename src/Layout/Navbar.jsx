@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "./style.css";
-import logo from '../Assets/final.png'
+import logo from "../Assets/final.png";
 const Navbar = () => {
   const [width, setWidth] = React.useState(window.innerWidth);
   const updateWidthAndHeight = () => {
@@ -10,10 +10,12 @@ const Navbar = () => {
     window.addEventListener("resize", updateWidthAndHeight);
     return () => window.removeEventListener("resize", updateWidthAndHeight);
   }, []);
+
   let [mobMenu, setMobMenu] = useState(false);
   const toggleMenu = () => {
     setMobMenu(!mobMenu);
   };
+
   if (width > 992) {
     mobMenu = false;
   }
@@ -79,22 +81,6 @@ const Navbar = () => {
                     Contact
                   </a>
                 </li>
-                {/* <li>
-                  <button
-                    className="non-mobile btn magnet backlight-button non-border cta"
-                    id="headerCta"
-                    onclick="scrollPageTo('footer', 0);"
-                  >
-                    go digital
-                  </button>
-                  <button
-                    className="only-mobile btn magnet backlight-button non-border cta"
-                    id="headerCta"
-                    onclick="scrollPageTo('footer', 0); toggleMenu()"
-                  >
-                    go digital
-                  </button>
-                </li> */}
               </ul>
             </div>
           </nav>

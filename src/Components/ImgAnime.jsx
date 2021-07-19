@@ -3,16 +3,14 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import SwiperCore, {
   Navigation,
   Pagination,
-  Scrollbar,
-  A11y,
   Autoplay,
 } from "swiper";
 // assets
 import dotnet from "../Assets/dotnet.png";
 import python from "../Assets/python.png";
 import rails from "../Assets/rails.png";
-import reactLogo from '../Assets/reactlogo.png'
-import node from '../Assets/node.png'
+import reactLogo from "../Assets/reactlogo.png";
+import node from "../Assets/node.png";
 import "swiper/swiper.min.css";
 
 SwiperCore.use([Navigation, Pagination, Autoplay]);
@@ -26,36 +24,19 @@ export default function ImgAnime() {
         pagination={{
           clickable: true,
         }}
-        //   centeredSlides={true}
         autoplay={{ delay: 2500, disableOnInteraction: false }}
       >
         <SwiperSlide>
-          <img
-            className="anim_img"
-            src={reactLogo}
-            alt="..."
-          />
+          <img className="anim_img" src={reactLogo} alt="..." />
         </SwiperSlide>
         <SwiperSlide>
-          <img
-            className="anim_img2"
-            src={node}
-            alt="..."
-          />
+          <img className="anim_img2" src={node} alt="..." />
         </SwiperSlide>
         <SwiperSlide>
-          <img
-            className="anim_img2"
-            src={rails}
-            alt="..."
-          />
+          <img className="anim_img2" src={rails} alt="..." />
         </SwiperSlide>
         <SwiperSlide>
-          <img
-            className="anim_img"
-            src={python}
-            alt="..."
-          />
+          <img className="anim_img" src={python} alt="..." />
         </SwiperSlide>
 
         <SwiperSlide>

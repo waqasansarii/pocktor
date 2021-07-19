@@ -1,4 +1,4 @@
-import React,{useEffect} from "react";
+import React, { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import up from "../Assets/up.png";
@@ -9,16 +9,16 @@ const About = () => {
     AOS.init();
   }, []);
   return (
-    <div className="about_container" id='about'>
+    <div className="about_container" id="about">
       <div className="about_md">
         <div className="about_sd">
           <h1>About Us</h1>
           <hr
-              data-aos="fade-right"
-              data-aos-duration="500"
-              data-aos-easing="ease-in-out"
-              className="cus_hr about_hr"
-            />
+            data-aos="fade-right"
+            data-aos-duration="500"
+            data-aos-easing="ease-in-out"
+            className="cus_hr about_hr"
+          />
           <div className="lt_scrol_md">
             <div className="lt_up">
               <img src={up} alt="..." />

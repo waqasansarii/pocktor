@@ -3,8 +3,6 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import SwiperCore, {
   Navigation,
   Pagination,
-  Scrollbar,
-  A11y,
   Autoplay,
 } from "swiper";
 // data
@@ -20,7 +18,7 @@ import "aos/dist/aos.css";
 // import "swiper/swiper.css";
 import "swiper/swiper.min.css";
 
-SwiperCore.use([Navigation, Pagination, Scrollbar, A11y, Autoplay]);
+SwiperCore.use([Navigation, Pagination, Autoplay]);
 
 const Partner = () => {
   useEffect(() => {
@@ -51,7 +49,6 @@ const Partner = () => {
               pagination={{
                 clickable: true,
               }}
-              //   centeredSlides={true}
               autoplay={{ delay: 2500, disableOnInteraction: false }}
               breakpoints={{
                 640: {

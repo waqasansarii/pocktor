@@ -1,7 +1,6 @@
 import "./App.css";
 import React, { useEffect, useState } from "react";
 import Home from "./Pages/Home";
-// import { CursorProvider } from 'react-cursor-custom'
 
 function useMousePosition() {
   const [mousePosition, setMousePosition] = useState({ x: null, y: null });
@@ -22,7 +21,6 @@ function useMousePosition() {
 }
 
 function App() {
-
   const { x, y } = useMousePosition();
 
   return (

@@ -13,7 +13,6 @@ const Project = () => {
         <div className="project_sd">
           <p>Explore our</p>
           <h1>Projects</h1>
-
           <hr
             data-aos="fade-right"
             data-aos-duration="500"
