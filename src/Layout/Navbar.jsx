@@ -20,6 +20,12 @@ const Navbar = () => {
     mobMenu = false;
   }
 
+  const handleCloseMenu = ()=>{
+    if(mobMenu){
+      setMobMenu(false)
+    }
+  }
+
   return (
     <div className="nav-container " id="header">
       <div className="container-xl">
@@ -57,27 +63,27 @@ const Navbar = () => {
                   </div>
                 </li>
                 <li>
-                  <a href="#projects" title="Projects">
+                  <a href="#projects" title="Projects" onClick={handleCloseMenu}>
                     Projects
                   </a>
                 </li>
                 <li>
-                  <a href="#services" title="Services">
+                  <a href="#services" title="Services" onClick={handleCloseMenu}>
                     Services
                   </a>
                 </li>
                 <li>
-                  <a href="#partner" title="Team">
+                  <a href="#partner" title="Team" onClick={handleCloseMenu}>
                     Partners
                   </a>
                 </li>
                 <li>
-                  <a href="#about" title="Careers">
+                  <a href="#about" title="Careers" onClick={handleCloseMenu}>
                     About
                   </a>
                 </li>
                 <li>
-                  <a href="#contact" title="Blog">
+                  <a href="#contact" title="Blog" onClick={handleCloseMenu}>
                     Contact
                   </a>
                 </li>
